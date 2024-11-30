@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Clientes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Clientes</h1>
+        <table id="tabla-clientes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los datos se llenarán desde JavaScript -->
+            </tbody>
+        </table>
+        <div class="footer">
+            © 2024 Mi Empresa - Todos los derechos reservados
+        </div>
+        <div><p><a href="index.html">Home</a></p></div>
+        <div><p><a href="registro.html">Alta</a></p></div>
+    </div>
+
+    <script>
+        async function cargarClientes() {
+    try {
+        // Llamada a la API en XAMPP para obtener la lista de clientes
+        const response = await fetch('http://localhost/clientes_app/api.php');
+        
+        // Asegúrate de que la respuesta sea válida y se pueda convertir a JSON
+        if (!response.ok) {
+            throw new Error(`Error en la respuesta del servidor: ${response.status}`);
+        }
+
+        const clientes = await response.json();
+
+        // Seleccionar el cuerpo de la tabla
+        const tbody = document.querySelector('#tabla-clientes tbody');
+        tbody.innerHTML = '';
+
+        // Agregar cada cliente a la tabla
+        clientes.forEach(clientes => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${clientes.id}</td>
+                <td>${clientes.nombre}</td>
+                <td>${clientes.email}</td>
+                <td>${clientes.telefono}</td>
+            `;
+            tbody.appendChild(row);
+        });
+    } catch (error) {
+        console.error('Error al cargar los clientes:');
+    }
+}
+
+        // Cargar clientes al cargar la página
+        cargarClientes();
+    </script>
+</body>
+</html>

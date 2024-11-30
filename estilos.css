@@ -1,0 +1,109 @@
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #821131;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #FABC3F;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #C7253E;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilos generales para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezado de la tabla */
+thead {
+    background-color: #C7253E; /* Verde */
+    color: white;
+}
+
+thead th {
+    padding: 14px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #E85C0D;
+}
+
+/* Filas de la tabla */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover para las filas */
+tbody tr:hover {
+    background-color: #E85C0D; /* Azul claro */
+}
+
+/* Celdas de la tabla */
+td {
+    padding: 12px;
+    text-align: left;
+    color: #333;
+}
+
+/* Ajustes de bordes y espaciado */
+th, td {
+    border-right: 1px solid #ddd;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+/* Estilos de pie de página */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+p a {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #E85C0D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+p a:hover {
+    background-color: #9cb8f3;
+}

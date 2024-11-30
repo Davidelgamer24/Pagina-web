@@ -1,0 +1,147 @@
+<html>
+<head>
+    <title>Registrar Clientes</title>
+    <style>
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #821131;
+            margin: 0;
+            padding-top: 60px; /* espacio para el menú fijo */
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ccc;
+            position: fixed; /* Fijar en la parte superior */
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000; /* Asegurar que quede encima de otros elementos */
+        }
+
+        .menu a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 5px 10px;
+            transition: color 0.2s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        /* Efecto de elevación al pasar el mouse */
+        .menu a:hover {
+            color: #007bff;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid #007bff;
+        }
+
+        /* Estilo específico para "Cerrar Sesión" */
+        .menu .logout {
+            color: #d9534f;
+        }
+
+        .menu .logout:hover {
+            color: #d9534f;
+            border-bottom: 2px solid #d9534f;
+        }
+
+        /* Estilo del contenedor principal */
+        .container {
+            background-color: #FABC3F;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        /* Estilo de otros elementos */
+        h1 {
+            text-align: center;
+            font-size: 22px;
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #495057;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"], select, input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #495057;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #E85C0D;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Registrar cliente</h1>
+        <form action="registrar.php" enctype="multipart/form-data" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+        
+            <input type="submit" value="Salvar">
+        </form>
+        <div id="error"></div>
+    </div>
+</body>
+</html>

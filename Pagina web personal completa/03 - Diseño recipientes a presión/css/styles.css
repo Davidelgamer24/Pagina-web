@@ -1,0 +1,145 @@
+
+:root{
+  --color1: #C7253E;
+  --color2: #FABC3F;
+  --color2C: #FABC3F;
+  --color2D: #FABC3F;
+  --color3: #FABC3F;
+  --color4: #E85C0D;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* https://nekocalc.com/px-to-rem-converter */
+
+
+  html {
+    box-sizing: border-box;
+    /* background-color: #e3dac9; */
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  html {
+    font-size: 62.5%;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color1);
+    color: var(--color2);
+  }
+
+  .encabezado {
+    width: 100%;
+    text-align: center;
+    margin: 3rem auto 0;
+  }
+
+  h1,h2,h3 {    
+    text-align: center;
+  }
+  
+  h2,h3{
+    color: var(--color2D);
+  }
+
+  .header-1 {
+    font-size: 3.5rem;
+  }
+
+  .contenedor {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    padding-bottom: 3rem; 
+    border: 1px dashed var(--color4);
+    border-radius: 5px;
+  }
+
+  .head-2 {
+    font-size: 2.75rem;
+  }
+
+  .var-entradas {
+    margin: auto;
+    width: 100%;
+    background-color: var(--color4);
+    padding: 1.5rem 2.75rem;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  legend {
+    color: var(--color2C);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 0.75rem 1.75rem;
+  }
+
+  label {
+    color: var(--color2C);
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+      -moz-appearance: textfield;
+  }
+
+  .input-data {
+    width: 100%;
+    height: 2.25rem;
+    font-size: 1.75rem;
+  }
+  
+  .input-data:focus {
+    outline: 1px solid var(--color1);
+  }
+
+  .datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ /*    grid-template-rows: auto auto; */
+    gap: 0.75rem;
+    column-gap: 3.5rem;
+  }
+
+  .boton-alinear{    
+    width: 80rem;
+    margin: 3rem auto;
+    text-align: right;
+  }
+
+  .boton {
+    background-color: var(--color3);
+    color: var(--color4);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.25rem 5.75rem;
+    font-size: 1.25rem;
+  }
+
+  .boton:hover{
+    background-color: var(--color2D); 
+    cursor: pointer;
+  }
+
+  .alinear-izquierda {
+    text-align: left;
+  }
+
+
+
+
+  

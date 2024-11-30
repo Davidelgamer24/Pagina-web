@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú vertical responsivo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../Pagina web/index.html"><header>
+        <h1 class="titulo">David Arreola Araiza <span style="color: red;">Ingeniero en computacion</span></h1>
+     </header></a>
+    <section> <h1>Ejemplo 1</h1>
+    <nav>
+        <div class="mobile">
+            <div class="header">
+                <div class="logo">Logo</div>
+                <div class="more">
+                    <button id="bMore"><span class="material-icons">menu</span></button>
+                </div>
+            </div>
+            <div id="links" class="links">
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Search</a>
+                <a href="#">Sign up</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+        <div class="desktop">
+            <div class="logo">Logo</div>
+
+            <div class="primary">
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="secondary full">
+                <a href="#">Search</a>
+                <a href="#">Sign up</a>
+                <a href="#">Login</a>
+            </div>
+
+            <div class="secondary mini">
+                <a href="#" class="more">More</a>
+                 <div class="submenu">
+                    <a href="#">Search</a>
+                    <a href="#">Sign up</a>
+                    <a href="#">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const bMore = document.querySelector('#bMore');
+        const links = document.querySelector('#links');
+
+        bMore.addEventListener("click", (e) => {
+            links.classList.toggle("collapsed")
+        });
+    </script>
+    </section>
+    
+    <section> <h1>Ejemplo 2</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="header">
+                    <div class="date">11 de Enero</div>
+                    <div class="title">Como funciona CSS</div>
+                </div>
+    
+                <div class="footer">
+                    <div class="autor">
+                        <a href="#">
+                            <img src="imagen.jpg" alt="">
+                            <span>David Arreola</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <!---CARD-->
+            <div class="card element-1">
+                <div class="header">
+                    <div class="date">11 de Enero</div>
+                    <div class="title">Como funciona CSS</div>
+                </div>
+    
+                <div class="footer">
+                    <div class="autor">
+                        <a href="#">
+                            <img src="imagen.jpg" alt="">
+                            <span>David Arreola</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <!---CARD-->
+            <div class="card element-2">
+                <div class="header">
+                    <div class="date">11 de Enero</div>
+                    <div class="title">Como funciona CSS</div>
+                </div>
+    
+                <div class="footer">
+                    <div class="autor">
+                        <a href="#">
+                            <img src="imagen.jpg" alt="">
+                            <span>David Arreola</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <!---CARD-->
+            <div class="card element-3">
+                <div class="header">
+                    <div class="date">11 de Enero</div>
+                    <div class="title">Como funciona CSS</div>
+                </div>
+    
+                <div class="footer">
+                    <div class="autor">
+                        <a href="#">
+                            <img src="imagen.jpg" alt="">
+                            <span>David Arreola</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+    </div></section>
+
+    <section><h1>Ejemplo 3</h1>
+        <table>
+            <caption>Mi primera tabla</caption>
+    
+            <thead>
+                <tr>
+                    <th>Título 1</th>
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                    <th>Título 4</th>
+                    <th>Título 5</th>
+                    <th>Título 6</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr><tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr></tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>David Arreola</td>
+                    <td>México</td>
+                    <td>$3, 500</td>
+                    <td>$6, 500</td>
+                    <td>88.67</td>
+                    <td>16</td>
+                </tr>
+            </tbody>
+    
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>$3, 500</th>
+                    <th>$6, 500</th>
+                    <th>88.67</th>
+                    <th>28</th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section><h1>Ejemplo 4</h1>
+        <div class="notification">
+            <div class="count">29</div>
+            <div class="material-icons">notifications</div>
+        </div>
+    </section>
+
+    <section><h1>Ejemplo 5</h1>
+        <div class="progressbar-container">
+            <div class="outer-box">
+                <div class="inner-box">100%</div>
+                <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                version="1.1" 
+                width="200" 
+                height="200">
+                <defs>
+                    <linearGradient id="gradientColor">
+                        <stop offset="0%" stop-color="#e91e63"/>
+                        <stop offset="100%" stop-color="#673ab7"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="80" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section><h1>Ejemplo 6</h1>
+        <div class="price-table-container">
+            <div class="table">
+                <div class="tittle">Startup Plan</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="number">69</span>
+                    <span class="frequency">/mo</span>
+                </div>
+                <div class="features">
+                    <ul>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                    </ul>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn">Try for free</a>
+                </div>
+            </div>
+            <div class="table recommended">
+                <div class="tittle">Startup Plan</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="number">69</span>
+                    <span class="frequency">/mo</span>
+                </div>
+                <div class="features">
+                    <ul>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                    </ul>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn recommended">Try for free</a>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tittle">Startup Plan</div>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="number">69</span>
+                    <span class="frequency">/mo</span>
+                </div>
+                <div class="features">
+                    <ul>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                        <li>
+                            <span class="material-icons check_circle">check_circle</span>
+                            Ease Acces
+                        </li>
+                    </ul>
+                </div>
+                <div class="actions">
+                    <a href="#" class="btn">Try for free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section><h1>Ejemplo 7</h1>
+        <label class="checkbox-container">
+            Soy un Checkbox
+            <input type="checkbox" name="" id="">
+            <span class="checkmark">
+                <span class="material-icons">check</span>
+            </span>
+        </label>
+    
+        <label class="checkbox-container">
+            Soy un radio button
+            <input type="radio" name="a" id="">
+            <span class="checkmark radio">
+               <div class="circle"></div>
+            </span>
+        </label>
+        <label class="checkbox-container">
+            Soy un radio button
+            <input type="radio" name="a" id="">
+            <span class="checkmark radio">
+               <div class="circle"></div>
+            </span>
+        </label>
+    </section>
+
+    <section><h1>Ejemplo 8</h1>
+        <div class="search-bar">
+            <input type="text">
+            <div class="actions">
+                <button>
+                    <span class="material-icons">mic</span>
+                </button>
+                <button>
+                    <span class="material-icons">document_scanner</span>
+                </button>
+                <button>
+                    <span class="material-icons">search</span>
+                </button>            
+            </div>
+        </div>
+    </section>
+
+    <section><h1>Ejemplo 9</h1>
+        <div class="personas-container">
+            <div class="persona">
+                <img src="profile.jpg" alt="">
+                <span class="name">
+                    <span class="text">David Arreola</span>
+                </span>
+            </div>
+    
+            <div class="persona">
+                <img src="profile_2.jpg" alt="">
+                <span class="name">
+                    <span class="text">David Arreola</span>
+                </span>
+            </div>
+    
+            <div class="persona">
+                <img src="profile_3.jpg" alt="">
+                <span class="name">
+                    <span class="text">David Arreola</span>
+                </span>
+            </div>
+    
+            <div class="persona">
+                <img src="profile_4.jpg" alt="">
+                <span class="name">
+                    <span class="text">David Arreola</span>
+                </span>
+            </div>
+    
+            <div class="persona">
+                <img src="profile_5.jpg" alt="">
+                <span class="name">
+                    <span class="text">David Arreola</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section><h1>Ejemplo 10</h1>
+        <div class="chat-container">
+            <div class="bubble-container right">
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div>
+                            <span>Hola soy una burbuja, este es un primer mensaje de texto</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div>
+                            <span>Hola soy una burbuja</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div>
+                            <span>Hola soy una burbuja</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!----Left-->
+            <div class="bubble-container left">
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div>
+                            <span>Hola soy una burbuja</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div>
+                            <span>Hola soy una burbuja, ya hazme caso que ya quiero terminar la tarea</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bubble">
+                    <div class="bubble-text">
+                        <div>
+                            <span>Hola</span>
+                            <div class="bubble-info">3 min ago</div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <hr>
+        <a href="../../index.html">Home</a>
+</body>
+</html>

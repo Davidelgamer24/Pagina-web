@@ -1,0 +1,50 @@
+/* Estilo general */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #821131;
+}
+
+/* Estilo del título principal */
+.titulo {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Estilo de las secciones */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #FABC3F;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del encabezado de cada sección */
+section h2 {
+    font-size: 24px;
+    color: #C7253E; /* Color verde para los títulos */
+    margin-top: 0;
+}
+
+/* Estilo del botón Home */
+p a {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #C7253E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+p a:hover {
+    background-color: #9cb8f3;
+}

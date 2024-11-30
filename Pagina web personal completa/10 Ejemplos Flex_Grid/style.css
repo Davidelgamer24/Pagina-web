@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    text-align: center;
+    margin: 40px 0;
+  }
+  section {
+    margin: 30px;
+  }
+  .example-container {
+    margin-bottom: 50px;
+    border: 2px solid #333;
+    padding: 20px;
+  }
+  .item {
+    background-color: #FABC3F;
+    padding: 40px;
+    margin: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  /* Ejemplo 1 - Flexbox: Alinear elementos horizontalmente */
+  .flex-horizontal {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Ejemplo 2 - Flexbox: Alinear elementos verticalmente */
+  .flex-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ejemplo 3 - Flexbox: Distribución con espacio alrededor */
+  .flex-space-around {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* Ejemplo 4 - Grid: Cuadrícula básica */
+  .grid-basic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  /* Ejemplo 5 - Grid: Cuadrícula con diferentes tamaños de columnas */
+  .grid-mixed {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+  }
+
+  /* Ejemplo 6 - Flexbox: Contenedor con alineación centrada */
+  .flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  /* Ejemplo 7 - Flexbox: Flex-grow en acción */
+  .flex-grow {
+    display: flex;
+  }
+  .flex-grow .item {
+    flex-grow: 1;
+  }
+
+  /* Ejemplo 8 - Grid: Áreas nombradas */
+  .grid-areas {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar content content"
+      "footer footer footer";
+    gap: 10px;
+  }
+  .grid-areas .header {
+    grid-area: header;
+  }
+  .grid-areas .sidebar {
+    grid-area: sidebar;
+  }
+  .grid-areas .content {
+    grid-area: content;
+  }
+  .grid-areas .footer {
+    grid-area: footer;
+  }
+
+  /* Ejemplo 9 - Grid: Ajuste de contenido automático */
+  .grid-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  /* Ejemplo 10 - Flexbox y Grid combinados */
+  .flex-grid {
+    display: flex;
+  }
+  .flex-grid .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex: 1;
+  }

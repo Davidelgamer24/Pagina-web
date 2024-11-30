@@ -1,0 +1,101 @@
+:root{
+    --color1: #a200ff;
+    --color2: #96a6ff;
+    --color3: #89cff3;
+    --color4: #f389e1;
+    --color4D: #fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cdf5fd;
+}
+
+.contenedor{
+    background-color: var(--color1);
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.contenedor div{
+    padding: 2.5% 0;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .consejoMillonario{
+    padding: 0 0 2.5% 0;
+    width: 100%;
+    color: var(--color3);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .consejoMillonario p{
+    margin: 0;
+}
+
+.contenedor .salida{
+    width: 80%;
+    margin: 0 10%;
+}
+
+.contenedor div label{
+    color: var(--color2);
+}
+
+.contenedor div input{
+    outline: transparent;
+    padding: 3px;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 1% 0;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+.contenedor div .entradaInput{
+    background-color: var(--color4);
+    color: var(--color2);
+    border: 2px solid var(--color4D);
+}
+
+.contenedor div #output{
+    background-color: var(--color4);
+    color: var(--color2);
+    border: 0;
+}
+
+
+.contenedor button{
+    margin-bottom: 2.5%;
+    background-color: var(--color2);
+    color: var(--color1);
+    border-radius: 10px;
+    align-self: center; 
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="entrada">
+            <label for="masa">Masa:</label>
+            <input type="number" class="entradaInput" name="masa" id="masa" placeholder="Peso (Kg)">
+        </div>
+        <div class="entrada">
+            <label for="estatura">Estatura:</label>
+            <input type="number" class="entradaInput" name="estatura" id="estatura" placeholder="Estatura (m)">
+        </div>
+        <div class="salida">
+            <label for="output">Tu IMC es:</label>
+            <input disabled type="text" name="output" id="output" placeholder="Salida">
+        </div>
+        <div class="consejo">
+            <p id="consejo"></p>
+        </div>
+
+        <button onclick="calcular()">Calcular</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y fuente */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeff3;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-top: 8px solid #FABC3F;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #c7253e;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #c7253e;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Secciones */
+.info, .experience, .education, .skills {
+    margin-top: 30px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #4a90e2;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    color: #4a90e2;
+}
+
+/* Listas y elementos de experiencia */
+ul {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Items de experiencia y educación */
+.experience-item, .education-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3, .education-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.experience-item p, .education-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Habilidades */
+.skills span {
+    display: inline-block;
+    background: #4a90e2;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.skills span:hover {
+    background: #357abd;
+}
